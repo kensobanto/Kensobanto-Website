@@ -1,0 +1,91 @@
+.member-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.member {
+  margin: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease-in-out;
+}
+
+.member-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.member-avatar {
+  margin-bottom: 10px;
+}
+
+.member-avatar-size {
+  border-radius: 50%;
+}
+
+.member-name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.member-position {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.member-description {
+  text-align: center;
+}
+
+.member:hover {
+  /*animation: bounce 0.3s;
+  animation-fill-mode: forwards;*/
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease-in-out;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h2.title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+div.description {
+  margin: 20px 30px 30px 20px;
+}
+
+h4.description {
+  display: block;
+  font-size: 20px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}

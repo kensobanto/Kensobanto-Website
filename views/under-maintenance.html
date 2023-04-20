@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Đang bảo trì</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style-content.css">
+  <link rel="stylesheet" href="/css/style-footer.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/img/icon.png" />
+  <link rel="icon" type="image/png" href="/img/icon.png">
+</head>
+
+<body>
+
+  <!-------Navigation Header------->
+  <div class="container">
+    <nav class="header"> 
+      <div class="hidden-on-mobile"> 
+        <svg width="100" height="100">
+          <defs>  
+        <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="100%" y2="50%" > 
+            
+            <stop offset="0%" stop-color="#62f9ff">
+                <animate attributeName="stop-color" values="#62f9ff; #2663ff; #62f9ff" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+            <stop offset="100%" stop-color="#8049ff">
+                <animate attributeName="stop-color" values="#8049ff; #62f9ff; #8049ff" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+        </linearGradient> 
+
+    </defs>
+      <g>
+          <path fill="url('#logo-gradient')" d="M 0 0 L 0 35.5 L 61 35.5 L 61 0 L 0 0 M 5 6 L 25.4 6 L 33.6 14.7 L 15.3 27.9 L 5 27.9 L 5 6 M 32.4 6 L 56 6 L 56 27.8 L 53.6 27.8 L 32.4 6 M 25.3 28 L 37.7 19 L 46.399 28 L 25 28"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hidden-on-desktop">
+        <object class="main-logo" data="/img/logo_name.svg" width="200" height="90"></object>
+      </div>
+      <div class="menu-bar-hidden-on-mobile"> 
+        <ul class="menu-bar-desktop">
+          <li><a href="/" class="navbar-link">Trang chủ</a></li>
+          <li><a href="/about" class="navbar-link">Về chúng tôi</a></li>
+          <li><a href="/products" class="navbar-link">Các sản phẩm</a></li>
+          <li><a href="/donation" class="navbar-link">Ủng hộ</a></li>
+          <li><a href="/supports" class="navbar-link">Hỗ trợ</a></li>
+      </ul>
+      </div>
+      <div class="header-1">
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+         <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/" class="navbar-link">Trang chủ</a></li>
+            <li><a href="/about" class="navbar-link">Về chúng tôi</a></li>
+            <li><a href="/products" class="navbar-link">Các sản phẩm</a></li>
+            <li><a href="/donation" class="navbar-link">Ủng hộ</a></li>
+            <li><a href="/supports" class="navbar-link">Hỗ trợ</a></li>
+          </ul>
+        </div>
+      </div>
+      <script src="/js/script.js" ></script>
+    </nav>
+    <div class="side-bar"></div>
+<!-------End Navigation Header------->
+  <!-------Content Middle------->
+  <nav class="middle">
+    <div class="container">
+      <h1 class="welcome-text">
+        Trang này hiện vẫn đang trong trạng thái bảo trì!
+      </h1>
+    </div>
+  </nav>
+    
+    <!-------End Content Middle------->
+   <!-------Footer------->
+   <footer>
+    <div class="side-bar"></div>
+    <section class="container">
+    <div class="first-bar">
+      <div class="company-logo">
+      </object>
+      <a class="name" href="/">Kensobanto, Inc.</a>
+    </div>
+      <div class="about-company">
+        <p class="description">Chúng tôi là một tổ chức công nghệ đến từ Việt Nam. Chúng tôi xây dựng mọi thứ để phục vụ mọi người bằng các sản phẩm của mình</p>
+      </div>
+    </div>
+      <div class="second-bar">
+        <ol class="find-us">
+          <h3>
+          Tìm chúng tôi ở
+        </h3>
+          <li><a class="footer-section" href="https://facebook.com/kensobanto">Facebook</a></li>
+          <li><a class="footer-section" href="https://discord.gg/rMvwJfghXb">Discord</a></li>
+        </ol>
+      </div>
+      <div class="third-bar">
+        <ol class="contact">
+          <h3>Cần trợ giúp ư?</h3>
+          <p>Liên hệ với chúng tôi qua email bên dưới hoặc sử dụng plugin trò chuyện trên trang web để yêu cầu trợ giúp!</p>
+          <li><a>Email: </a><a class="footer-section" href="mailto:support@kensobanto.tk">support@kensobanto.tk</a></li>
+        </ol>
+      </div>
+    </section>
+    <div class="copyright">
+      <ol class="copyright">
+      <li><a class="copyright-section">©2023 KENSOBANTO, INC.</a></li>
+      <li><a class="copyright-section" href="/">Terms of Service</a></li>
+      <li><a class="copyright-section" href="/">Privacy</a></li>
+      </ol>
+    </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Loader Div -->
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  </div>
+</body>
+  <!-- Loader Script -->
+  <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+  <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109479738584055");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      
+    </script>
+</html>

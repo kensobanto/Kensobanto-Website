@@ -1,0 +1,54 @@
+.title {
+    padding-top: 35px;
+}
+
+.containers {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    padding-top: 50px;
+    margin-left: 25px;
+    margin-right: 45px;
+    padding-bottom: 50px;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.product-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.box .image img{
+    width: 100%;
+}
+
+.image {
+    width: 45%;
+}
+
+h2.product-title {
+    text-align: start;
+    cursor: pointer;
+}
+
+p.product-description {
+    cursor: pointer;
+}

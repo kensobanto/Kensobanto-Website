@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Donation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style-content.css">
+  <link rel="stylesheet" href="/css/style-footer.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/img/icon.png" />
+  <meta name="title" content="Donation to Kensobanto">
+  <meta name="description" content="Kensobanto is a Technology Organization make something crazy and insane!">
+  <meta name="keywords" content="kensobanto">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon.png">
+  <meta data-n-head="ssr" name="twitter:image" content="/img/KENSOBANTO, INC (Wide + Slogan).png">
+  <meta data-n-head="ssr" name="twitter:image:alt" content="Kensobanto, Inc.">
+</head>
+
+<body>
+  <!-------Navigation Header------->
+  <div class="container">
+    <nav class="header"> 
+      <div class="hidden-on-mobile"> 
+        <object data="/public/img/logo_name.svg" width="300" height="80"></object>
+      </div>
+      <div class="hidden-on-desktop">
+        <object data="/public/img/logo_name.svg" width="200" height="90"></object>
+      </div>
+      <div class="menu-bar-hidden-on-mobile"> 
+        <ul class="menu-bar-desktop">
+          <li><a href="/" class="navbar-link">Home</a></li>
+          <li><a href="/about" class="navbar-link">About Us</a></li>
+          <li><a href="/products" class="navbar-link">Product</a></li>
+          <li><a href="/donation" class="navbar-link">Donation</a></li>
+          <li><a href="/supports" class="navbar-link">Supports</a></li>
+      </ul>
+      </div>
+      <div class="header-1">
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+         <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/" class="navbar-link">Home</a></li>
+            <li><a href="/about" class="navbar-link">About Us</a></li>
+            <li><a href="/products" class="navbar-link">Product</a></li>
+            <li><a href="/donation" class="navbar-link">Donation</a></li>
+            <li><a href="/supports" class="navbar-link">Supports</a></li>
+          </ul>
+        </div>
+      </div>
+      <script src="/js/script.js" ></script>
+    </nav>
+<!-------End Navigation Header------->
+  <!-------Content Middle------->
+    
+    <!-------End Content Middle------->
+   <!-------Footer------->
+    <footer>
+    <div class="side-bar"></div>
+    <section class="container">
+    <div class="first-bar">
+      <div class="company-logo">
+      <object class="logo" data="/img/logo.svg" width=70px height=80px>
+      </object>
+      <a class="name" href="/">Kensobanto, Inc.</a>
+    </div>
+      <div class="about-company">
+        <a class="description">We are a technology organization from Vietnam. We build everything to serve people with our products</a>
+      </div>
+    </div>
+      <div class="second-bar">
+        <ol class="find-us">
+          <h3>
+          Find us on
+        </h3>
+          <li><a class="footer-section" href="https://facebook.com/kensobanto">Facebook</a></li>
+          <li><a class="footer-section" href="https://discord.gg/kUGFQEcTk7">Discord</a></li>
+        </ol>
+      </div>
+      <div class="third-bar">
+        <ol class="contact">
+          <h3>Need help?</h3>
+          <p>Contact with us via email below or use chat plugin on website to request a help!</p>
+          <li><a>Email: </a><a class="footer-section" href="mailto:support@kensobanto.tk">support@kensobanto.tk</a></li>
+        </ol>
+      </div>
+    </section>
+    <div class="copyright">
+      <ol class="copyright">
+      <li><a class="copyright-section">©2023 KENSOBANTO, INC.</a></li>
+      <li><a class="copyright-section" href="/">Terms of Service</a></li>
+      <li><a class="copyright-section" href="/">Privacy</a></li>
+      </ol>
+    </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Loader Div -->
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+</body>
+  <!-- Loader Script -->
+  <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+  <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109479738584055");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</html>
