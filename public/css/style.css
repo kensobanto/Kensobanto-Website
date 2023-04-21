@@ -17,6 +17,10 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+img {
+	-webkit-user-drag: none;
+}
+
 body::-webkit-scrollbar {
 	display: none;
   }
@@ -104,7 +108,7 @@ nav.header {
 	display: inline-block;
 	position: relative;
 	color: #ffffff;
-  transition: 0.3s ease-in-out;
+	text-decoration: none;
   }
   
   .navbar-link:after {
@@ -125,20 +129,11 @@ nav.header {
 	transform-origin: bottom left;
   }
 
-.navbar-link {
-	color: #ffffff;
-	text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-.navbar-link:hover {
-  transition: 0.3s ease-in-out;
-}
-
 a.navbar-link {
-  color: rgb(0, 0, 0);
-  transition: color 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  background: rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  transition: all 0.3s ease-in-out;
 }
 
 a.navbar-link:hover {
@@ -147,9 +142,7 @@ a.navbar-link:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   animation: animate 10s linear infinite;
-  transition: 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  transition: 1s background;
+  transition: all 0.3s ease-in-out;
 }
 
 a.navbar-link:active {
@@ -273,10 +266,13 @@ object.main-logo {
 	margin-right: 10px;
   }
 
+  ul li {
+	transition: 0.3s ease-in-out;
+  }
 
   ul li:hover {
 	transform: scale(1.1);
-	transition: 0.3s;
+	transition: 0.3s ease-in-out;
   }
 
   @keyframes animate {

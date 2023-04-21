@@ -9,8 +9,9 @@
 }
 
 .member {
+  background-color: #f3f3f3;
   margin: 30px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   padding: 15px;
   width: 300px;
@@ -32,6 +33,7 @@
 
 .member-avatar-size {
   border-radius: 50%;
+  filter: drop-shadow(1px 4px 3px black);
 }
 
 .member-name {
@@ -51,9 +53,37 @@
   text-align: center;
 }
 
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-button {
+  padding: 5px;
+  border: 1;
+}
+
+img.social-media-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+img.social-media-icon:hover {
+  transform: translateY(-5px);
+  border-radius: 30%;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
 .member:hover {
   /*animation: bounce 0.3s;
   animation-fill-mode: forwards;*/
+  background-color: #ffffff;
   transform: translateY(-10px);
   box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);
   transition: 0.2s ease-in-out;
